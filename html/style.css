@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#more {display: none;}
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+}
+section.my_site{
+    min-height: 500px;
+    width: 85%;
+    margin: auto;
+    padding: 20px 70px;
+}
+section.my_site nav ul{
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+}
+section.my_site nav ul li a{
+    color: black;
+    display: flex;
+    gap: 5px;
+}
+section.my_site nav ul li a:hover{
+    color: #D1884F;
+}
+.activelink{
+    color: #D1884F !important;
+}
+.activebutton{
+    background-color: #008AAA !important;
+    color: white !important;
+    box-shadow: 0 3px 3px 0 #3BBADB;
+    cursor: pointer;
+}
+section.my_site nav ul li a svg{
+    height: auto;
+    width: 20px;
+}
+section.my_site .data{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.button1{
+    cursor: pointer;
+}
+section.my_site .data h3{
+    font-weight: 400;
+}
+section.my_site .data h1{
+    font-size: 42px;
+    margin: 0;
+    width: 365px;
+}
+section.my_site .data p{
+    width: 365px;
+}
+.sky_green{
+    color: #008AAA ;
+}
+.brown{
+    color: #D1884F;
+}
+.typegreen{
+    color: #3BBADB;
+}
+section.my_site .data .buttongroup{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+
+    
+}
+section.my_site .data button{
+    padding: 5px 10px;
+    color: #3BBADB;
+    border: 1px solid #3BBADB;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+section.my_site .data button:hover{
+    background-color: #008AAA;
+    color: white;
+    box-shadow: 0 3px 3px 0 #3BBADB;
+}
+
+section.my_site .image img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 0 0 0 125px;
+    box-shadow: -29px 4px 0px -12px #3BBADB;
+}
+section.my_site .dejango{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 940px) {
+
+    section.my_site .data h1{
+        font-size: 30px;
+        width: 290px;
+    }    
+    section.my_site .data p{
+        font-size: 12px;
+        width: 290px;
+    }
+    section.my_site nav ul li a {
+    font-size: 14px;
+    }
+    section.my_site nav ul li a svg{
+        height: auto;
+        width: 16px;
+    }
+    section.my_site .image img {
+        height: 300px;
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 700px) {
+
+    section.my_site .data h3 {
+    font-size: 14px;
+    }
+    section.my_site {
+    padding: 20px 30px;
+    }
+    section.my_site .data h1 {
+        font-size: 22px;
+        width: 200px;
+    }
+    section.my_site .data p{
+        font-size: 12px;
+        width: 200px;
+    }
+    section.my_site .image img {
+        height: 250px;
+        width: 200px;
+        border-radius: 0 0 0 85px;
+        box-shadow: -23px 2px 0px -10px #3BBADB;
+    }
+    section.my_site .dejango{
+        margin-top: 50px;
+    }
+    section.my_site {
+    min-height: 400px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    section.my_site .dejango{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    section.my_site .data{
+        text-align: center;
+        width: 65%;
+    }
+    section.my_site .data h1,section.my_site .data p{
+        width: 100%;
+    }
+    section.my_site nav ul{
+        padding: 0;
+        justify-content: center;
+        gap: 30px;
+    }
+    section.my_site nav ul li a{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    section.my_site {
+    padding: 20px;
+    }
+    section.my_site nav ul {
+    gap: 15px;
+    }
+    section.my_site .data {
+    width: 95%;
+    }
+
+}
